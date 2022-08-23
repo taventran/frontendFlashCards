@@ -17,10 +17,41 @@
   color: white;
   grid-gap: 20px;
 }
+.set-items {
+  cursor: pointer;
+  text-align: center;
+  display: auto;
+  color: black;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
 
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  color: white;
-  grid-gap: 20px;
+  grid-gap: 100px;
+
+}
+
+.card-style {
+  background-color: white;
+  color: black;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 32px 32px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 20px; /* 5px rounded corners */
+  cursor: pointer;
+  text-align: center;
+  border-color:transparent black;
 }

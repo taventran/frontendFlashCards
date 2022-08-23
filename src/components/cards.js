@@ -8,9 +8,9 @@ function Cards(props) {
            { 
             cards.map( card => {
                 return ( 
-                    <div key={card.id}>
-                        <h5 className="card">{card.term}</h5>
-                        <h5 className="card">{card.definition}</h5>
+                    <div key={card.id} className="card">
+                        <h5 className="card-style">{card.term}</h5>
+                        <h5 className="card-style">{card.definition}</h5>
                     </div>
                 )
             })
