@@ -1,7 +1,8 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
-import SetList from './components/set'
-import Cards from './components/cards'
+import SetList from './components/set';
+import Cards from './components/cards';
+import API from './api-service';
 
 
 function App() {
@@ -11,13 +12,7 @@ function App() {
   const[selectedSet, setSelectedSet] = useState(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/sets/", {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      }
-    })
-    .then(resp => resp.json())
+    API.getSets()
     .then(resp => setSet(resp))
     .catch(error => console.log(error))
   }, [])
